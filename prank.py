@@ -5,7 +5,6 @@ import ctypes
 import keyboard
 import time
 
-# Правильный и точный поиск временных файлов внутри одного монолитного .exe
 def resource_path(relative_path):
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
@@ -22,21 +21,17 @@ def block_system_keys():
     keyboard.add_hotkey('alt+f4', lambda: None, suppress=True)
 
 def secret_exit():
-    # На всякий случай гасим звук/видео
     ctypes.windll.winmm.mciSendStringW("close rickvideo", None, 0, 0)
-    # ХАКЕРСКИЙ ТРЮК: программа принудительно убивает саму себя в диспетчере задач,
-    # что мгновенно и чисто снимает ВСЕ блокировки Windows и закрывает экран!
     os.system(f"taskkill /f /pid {os.getpid()}")
 
 def activate_rickroll():
-    # Полностью стираем все элементы интерфейса ошибки со старта
     smiley_label.destroy()
     text_label.destroy()
     support_label.destroy()
     secret_hint_label.destroy()
     
     root.configure(bg='black')
-    root.config(cursor="no") # Включаем системный значок запрета на мышку 🚫
+    root.config(cursor="no")
 
     hwnd = root.winfo_id()
     
@@ -54,11 +49,8 @@ def activate_rickroll():
         root.after(200, keep_top)
     keep_top()
 
-    # БЛОКИРОВКА: Если друг со злости начнет кликать Esc — ничего не произойдет!
     root.bind("<Escape>", lambda e: "break")
     
-    # СЕКРЕТНЫЙ СПАСАТЕЛЬНЫЙ КРУГ: Чтобы закрыть программу, тебе нужно зажать Ctrl + Alt + Q.
-    # Этот хакерский выход сработает в обход любой блокировки!
     keyboard.add_hotkey('ctrl+alt+q', lambda: os.system(f"taskkill /f /pid {os.getpid()}"))
 
 root = tk.Tk()
@@ -78,9 +70,6 @@ keyboard.add_hotkey('ctrl+alt+q', secret_exit)
 block_system_keys()
 root.bind("<Escape>", lambda e: "break")
 
-# --- ОФОРМЛЕНИЕ КРАСНОГО ЭКРАНА ---
-
-# ГЛАВНАЯ ЛОВУШКА: Смайлик теперь полноценная скрытая кнопка
 smiley_label = tk.Button(
     root, 
     text=":) ", 
@@ -107,8 +96,6 @@ text_label.pack(anchor='w', padx=100)
 support_label = tk.Label(root, text="Stop code: RICKROLL_DETECTED_HA_HA", font=("Segoe UI", 14), justify="left", fg="#FFCDD2", bg="#D32F2F")
 support_label.pack(anchor='w', padx=100, pady=(30, 0))
 
-# ТЕМНО-КРАСНАЯ НАДПИСЬ-ПОДСКАЗКА СПРАВА ВНИЗУ
-# Она написана цветом #B71C1C, поэтому еле видна и сливается с фоном
 secret_hint_label = tk.Label(
     root, 
     text="▲ System tip: try clicking on the smiley face to recover Windows files...", 

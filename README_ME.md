@@ -23,3 +23,5 @@ A standalone harmless prank tool disguised as a multiplayer game setup or online
 * In reality, the project is 100% open-source. Just check the `prank.py` file above—there are NO data-stealers, NO backdoors, and NO hidden miners. Just * * pure, unadulterated Rick Astley.
 
 * Also, industry heavyweights like **Kaspersky, Microsoft Defender, and ESET** know what's up and flag the file as completely clean. 
+
+![VirusTotal Detections](https://www.virustotal.com/gui/file/0b03340b759aab07854be531c03990067e60c06de4ac08dffbf64bb0db7e64df)

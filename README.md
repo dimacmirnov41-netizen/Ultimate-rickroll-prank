@@ -1,25 +1,25 @@
-# 🎭 Ultimate Rickroll Prank
+# Ultimate Rickroll Prank (Шутка-рикролл)
 
-A standalone harmless prank tool disguised as a multiplayer game setup or online fix utility.
+Автономный безвредный инструмент для розыгрыша, замаскированный под настройку многопользовательской игры или утилиту для онлайн-фикса.
 
-## 🎯 What it does
-* Safely locks the screen and triggers a full-screen Rickroll.
-* Completely harmless to the PC — no files are modified, and it doesn't harm the system.
+## Что он делает
+* Безопасно блокирует экран и запускает полноэкранный рикролл.
+* Полностью безвреден для ПК — никакие файлы не изменяются, и системе не наносится ущерб.
 
-## 🕹️ Controls & Exit
-* **Emergency Exit:** If you want to test it or just got tired of watching the video, press `Ctrl + Alt + Q` to instantly close the prank and return to the desktop.
+## Управление и выход
+* Экстренный выход: Если вы хотите протестировать программу или просто устали смотреть видео, нажмите Ctrl + Alt + Q, чтобы мгновенно закрыть розыгрыш и вернуться на рабочий стол.
 
-## 🛠️ Customization
-* You can easily modify the code, replace the video file, or change the icon to customize the prank however you like!
+## Настройка
+* Вы можете легко изменить код, заменить видеофайл или поменять иконку, чтобы настроить розыгрыш по своему вкусу!
 
-## 📦 How to get it
-* Go to the **Releases** section on the right to download the ready-to-run compiled file.
+## Как получить
+* Перейдите в раздел Releases справа, чтобы скачать готовый к запуску скомпилированный файл.
 
-## 🛡️ Antivirus Panic (False Positives)
-* If you drop the compiled `.exe` into VirusTotal, it’s gonna light up like a Christmas tree with warnings. 
+## Паника антивирусов (Ложные срабатывания)
+* Если вы загрузите скомпилированный .exe в VirusTotal, он засветится предупреждениями, как новогодняя ёлка гирляндами.
 
-* **Chill, it's a false alarm.** Dumb antivirus bots see a script that locks the keyboard (`keyboard.block_key`) and refuses to close, so they automatically freak out and label it as a "Winlocker" or "Trojan". 
+* Не парьтесь, это ложная тревога. Глупые антивирусные боты видят скрипт, который блокирует клавиатуру (keyboard.block_key) и отказывается закрываться, поэтому они автоматически впадают в панику и помечают его как "Винлокер" или "Троян".
 
-* In reality, the project is 100% open-source. Just check the `prank.py` file above—there are NO data-stealers, NO backdoors, and NO hidden miners. Just * * pure, unadulterated Rick Astley.
+* На самом деле проект на 100% открыт (open-source). Просто проверьте файл prank.py выше — там НЕТ похитителей данных, НЕТ бэкдоров и НЕТ скрытых майнеров. Только чистый, неразбавленный Рик Эстли.
 
-* Also, industry heavyweights like **Kaspersky, Microsoft Defender, and ESET** know what's up and flag the file as completely clean. 
+* К тому же такие ведущие игроки индустрии, как Kaspersky, Microsoft Defender и ESET, знают, что к чему, и помечают файл как полностью безопасный.
